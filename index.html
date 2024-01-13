@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Custom Blocks - Blockly</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.15/bootstrap-native-v4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blockly_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blocks_compressed.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/javascript_compressed.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/msg/js/ja.js"></script>
+
+    <script src="./console_def.js"></script>
+    <script src="./console.js"></script>
+
+    <script src="./search_num_def.js"></script>
+    <script src="./search_num.js"></script>
+
+    <script src="./search_word_def.js"></script>
+    <script src="./search_word.js"></script>
+
+    <script src="./separate_def.js"></script>
+    <script src="./separate.js"></script>
+
+    <script src="./length_def.js"></script>
+    <script src="./length.js"></script>
+
+    <script src="./replace_def.js"></script>
+    <script src="./replace.js"></script>
+
+    <script src="./remove_def.js"></script>
+    <script src="./remove.js"></script>
+
+    <script src="workspace.js" defer></script>
+
+    <style>
+        #blocklyDiv {
+            height: 90vh;
+            width: 90vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8" id="blocklyDiv"></div>
+            <div class="col-4">
+                <button id="showCode" class="btn btn-success">JavaScriptを表示する</button>
+                <button id="execCode" class="btn btn-primary">実行する</button>
+                <pre id='jsCode'></pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
