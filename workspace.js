@@ -61,18 +61,17 @@ Promise.all(
 
 	const pre = document.getElementById('jsCode');
 	/* JavaScriptを表示する場合は下をアクティブにする */
-	/* pre.innerHTML = Blockly.JavaScript.workspaceToCode(workspace); */
+	pre.innerHTML = Blockly.JavaScript.workspaceToCode(workspace);
 
 	Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
 
 	/* JavaScriptを表示する場合は下をアクティブにする */
-	/*function showCode() {
+	function showCode() {
 		Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
 		const pre = document.getElementById('jsCode');
 		pre.innerHTML = Blockly.JavaScript.workspaceToCode(workspace);
 	}
 	document.getElementById('showCode').addEventListener('click', showCode, false);
-	*/
 	
 	function execCode() {
         Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
