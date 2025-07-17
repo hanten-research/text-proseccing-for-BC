@@ -70,6 +70,8 @@ Promise.all(
 		Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
 		const pre = document.getElementById('jsCode');
 		pre.innerHTML = Blockly.JavaScript.workspaceToCode(workspace);
+		alert("test");
+		alert(pre);
 	}
 	document.getElementById('showCode').addEventListener('click', showCode, false);
 	
