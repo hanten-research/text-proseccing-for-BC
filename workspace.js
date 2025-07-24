@@ -74,23 +74,6 @@ Promise.all(
 		alert(pre);
 	}
 	document.getElementById('showCode').addEventListener('click', showCode, false);
-
-	/* テキストファイル出力仮(始) */
-	/*1. Blobオブジェクトを作成する*/
-	const blob = new Blob([document.getElementById('jsCode')],{type:"text/plain"});
-
-	/*2. HTMLのa要素を生成*/
-	const link = document.createElement('a');
-
-	/*3. BlobオブジェクトをURLに変換*/
-	link.href = URL.createObjectURL(blob);
-
-	/*4. ファイル名を指定する*/
-	link.download = 'ファイル名.txt';
-
-	/*5. a要素をクリックする処理を行う*/
-	link.click();
-	/* テキストファイル出力仮(終) */
 	
 	function execCode() {
         Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
