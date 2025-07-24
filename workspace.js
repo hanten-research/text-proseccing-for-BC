@@ -71,7 +71,7 @@ Promise.all(
 		const pre = document.getElementById('jsCode');		
 		pre.innerHTML = Blockly.JavaScript.workspaceToCode(workspace);
 		const alerttest = "testmessage"
-		alert(test);
+		alert(alerttest);
 		alert(document.getElementById('jsCode'));
 	}
 	document.getElementById('showCode').addEventListener('click', showCode, false);
